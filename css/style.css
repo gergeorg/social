@@ -1,0 +1,279 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #E5E5E5;
+}
+
+.header {
+	background: #0050B3;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+.header-block {
+	max-width: 1200px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.search-input {
+	width: 336px;
+	background: #FFF;
+	border: 1px solid #D9D9D9;
+	border-radius: 4px;
+	padding: 5px 30px 5px 12px;
+	background-image: url(../img/search.svg);
+	background-repeat: no-repeat;
+	background-position: right 12px center;
+}
+
+.user {
+	display: flex;
+	align-items: center;
+}
+
+.user-avatar {
+	margin-right: 8px;
+}
+
+.user-name {
+	color: #FFF;
+	font-size: 14px;
+	line-height: 22px;
+	font-weight: 600;
+}
+
+.navigation {
+	display: flex;
+	align-items: center;
+}
+
+.nav-panel {
+	margin-left: 12px;
+	display: flex;
+	align-items: center;
+}
+
+.navigation-link {
+	display: flex;
+	align-items: center;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 22px;
+	font-weight: 600;
+	margin-left: 12px;
+}
+
+.navigation-link::before {
+	content: "";
+	width: 1px;
+	height: 16px;
+	background: #003A8C;
+	margin-right: 12px;
+}
+
+.navigation-link:last-child:after {
+	content: "";
+	width: 1px;
+	height: 16px;
+	background: #003A8C;
+	margin-left: 12px;
+}
+
+.icons-panel {
+	display: flex;
+	align-items: center;
+}
+
+.icon-link {
+	display: flex;
+	align-items: center;
+  margin-left: 17px;
+  text-decoration: none;
+}
+
+.arrow {
+  color: #002766;
+  padding-left: 7px;
+}
+
+.arrow:hover {
+  color: #fff;
+}
+
+.icon-link:last-child:before {
+	content: "";
+	width: 1px;
+	height: 16px;
+	background: #003A8C;
+	margin-right: 12px;
+}
+
+.header-icon {
+	fill: #002766;
+}
+
+.header-icon:hover {
+	fill: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+}
+
+.menu-sidebar {
+  margin-top: 18px;
+  max-width: 192px;
+  margin-right: 12px;
+}
+
+.menu-sidebar .user-avatar{
+  width: 24px;
+  height: 24px;
+}
+
+.menu-sidebar .user{
+  padding-left: 10px;
+}
+
+.menu-sidebar .user-name{
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 22px;
+  color: #262626;
+}
+
+.nav-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+
+.nav-link {
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #595959;
+  line-height: 22px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.nav-link.active {
+  background: #FFFFFF;
+  color: #262626;
+  font-weight: bold;
+}
+
+.nav-icon {
+  margin-right: 8px;
+}
+
+.nav-title {
+  padding-left: 10px;
+  margin-bottom: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #262626;
+}
+
+.more-link {
+  display: inline;
+  font-size: 14px;
+  line-height: 22px;
+  color: #1890FF;
+  text-decoration: none;
+  padding-left: 12px;
+  padding-top: 12px;
+}
+
+.more {
+  color: #bfbfbf;
+}
+
+.more-link_text {
+  padding-left: 12px;
+}
+
+.main-feed {
+  max-width: 588px;
+  margin-top: 18px;
+  flex-grow: 1;
+}
+
+.create-post {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  overflow: hidden;
+  /* width: 100%; */
+}
+
+.header-post {
+  background: #F5F5F5;
+}
+
+.create-post-title {
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #595959;
+  padding: 9px 16px;
+}
+
+.body-post {
+  display: flex;
+  padding: 16px 16px 24px 16px;
+  align-items: flex-start;
+}
+
+.create-post-input {
+  padding-top: 8px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8C8C8C;
+  /* min-height: 78px; */
+}
+
+.footer-post{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 16px 16px 16px;
+}
+
+.footer-post::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #E8E8E8;
+  margin-bottom: 16px;
+}
+
+.tag {
+  background: #F5F5F5;
+  border-radius: 48px;
+  border: none;
+  padding: 9px 12px;
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.tag-icon {
+  margin-right: 8px;
+}
