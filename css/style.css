@@ -7,6 +7,17 @@ body {
   background: #E5E5E5;
 }
 
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
 .header {
 	background: #0050B3;
 	padding-top: 6px;
@@ -147,15 +158,9 @@ body {
 	fill: #fff;
 }
 
-.container {
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-}
-
 .menu-sidebar {
+  width: 192px;
   margin-top: 18px;
-  max-width: 192px;
   margin-right: 12px;
 }
 
@@ -243,7 +248,6 @@ body {
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   overflow: hidden;
-  /* width: 100%; */
 }
 
 .header-post {
@@ -432,3 +436,287 @@ body {
   background-color: #E8E8E8;
   margin-bottom: 16px;
 }
+
+.right-sidebar {
+  width: 384px;
+}
+
+.stories {
+  margin-top: 16px;
+  margin-left: 24px;
+  padding: 16px 16px 16px 24px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  
+}
+
+.stories-icon {
+  fill: #0050B3
+}
+
+.stories-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.stories-title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: #262626;
+}
+
+.stories-button {
+  display: flex;
+  align-items: center;
+}
+
+.story-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #0050B3;
+  text-decoration: none;
+}
+
+.story-link:first-child::after {
+  content: "";
+  width: 4px;
+  height: 4px;
+  background: #BFBFBF;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 8px;
+  vertical-align: middle;
+}
+
+.stories-icon {
+  vertical-align: sub;
+}
+
+.story-item,
+.story-item-add {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-bottom: 16px;
+}
+
+.story-image {
+  display: flex;
+  justify-content: center;
+  margin-right: 12px;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  background: #F5F5F5;
+  border: 1px solid #D9D9D9;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  align-items: center;
+  text-align: center;
+  color: #1890FF;
+}
+
+.story-author {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: #0050B3;
+}
+
+.story-text {
+  font-size: 14px;
+  line-height: 22px;
+  color: #8C8C8C;
+  width: 100%;
+  word-wrap: none;
+}
+
+.stories-one {
+  background-image: url(../img/Arthur-avatar.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 3px solid #1890FF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.stories-two {
+  background-image: url(../img/Finn-avatar.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 3px solid #1890FF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.stories-three {
+  background-image: url(../img/Linda-avatar.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 3px solid #1890FF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.birthday {
+  margin-top: 16px;
+  margin-left: 24px;
+  padding: 16px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.user-birthday {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: #0050B3;
+  text-decoration: none;
+}
+
+.birthday-today {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: #595959;
+}
+
+.fanpage {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-top: 16px;
+  margin-left: 24px;
+  padding: 16px;
+}
+
+.fanpage-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #D9D9D9;
+  padding-bottom: 9px;
+}
+
+.fanpage-title {
+  margin: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: #595959;
+}
+
+.fanpage-body {
+  display: flex;
+  margin-top: 16px;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.page-avatar {
+  margin-right: 12px;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #BFBFBF;
+}
+
+.fanpage-user {
+  margin-bottom: 4px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: #0050B3;
+}
+
+.fanpage-links {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 23px;
+
+}
+
+.fanpage-icon {
+  fill: #262626;
+  vertical-align: middle;
+}
+
+.fanpage-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #8C8C8C;
+}
+
+.fanpage-notification {
+  padding: 1px 4px;
+  background: #F5F5F5;
+  border: 1px solid #D9D9D9;
+  box-sizing: border-box;
+  border-radius: 4px;;
+  font-size: 12px;
+  line-height: 20px;
+  color: #595959;
+}
+
+.fanpage-buttons {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fanpage-button {
+  width: 33.3%;
+  padding: 8px auto;
+  background: #FFFFFF;
+  border: 1px solid #D9D9D9;
+  font-size: 16px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  color: #595959;
+}
+
+.fanpage-button:nth-child(2) {
+  border-left: none;
+  border-right: none;
+}
+
+.fanpage-active {
+  border: 1px solid #1890FF;
+}
+
+.fanpage-likes {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.counter-likes{
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #262626;
+}
+
+.counter-week {
+  font-size: 14px;
+  line-height: 22px;
+  color: #8C8C8C;
+}
+
+
