@@ -799,6 +799,15 @@ main {
   .tag {
     margin-bottom: 10px;
   }
+
+  .button-text {
+    display: none;
+  }
+
+  .tag-icon {
+    margin-right: 0;
+  }
+
 }
 
 @media (max-width: 760px) {
@@ -806,4 +815,12 @@ main {
     display: none;
   }
 }
+
+@media (max-width: 540px) {
+  .nav-group {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+
 
